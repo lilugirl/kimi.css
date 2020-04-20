@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .layout {
+            height: 100vh;
+            background-color: thistle;
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        header {
+            height: 68px;
+            background-color: tomato;
+        }
+
+        .main {
+            background-color: palegreen;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .breadcrumb {
+            height: 40px;
+            background-color: plum;
+        }
+
+        .content {
+            height: 100%;
+            background-color: steelblue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="layout">
+        <header>header</header>
+        <section class="main">
+            <div class="breadcrumb">面包屑</div>
+            <div class="content">主要内容</div>
+        </section>
+    </div>
+</body>
+
+</html>

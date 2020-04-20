@@ -8,7 +8,7 @@
     "build": "npm run build-clean && npm run build-sass && npm run build-autoprefix && npm run build-cleancss",
     "build-autoprefix": "postcss --use autoprefixer --map false --output dist/kimi.css dist/kimi.css",
     "build-clean": "rimraf dist",
-    "build-cleancss":"cleancss -o dist/kimi.min.css dist/kimi.css",
+    "build-cleancss": "cleancss -o dist/kimi.min.css dist/kimi.css",
     "build-sass": "node-sass --output-style expaned --source-map true src/kimi.scss dist/kimi.css"
   },
   "author": "liuyi",
