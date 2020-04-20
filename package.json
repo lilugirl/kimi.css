@@ -1,0 +1,23 @@
+{
+  "name": "kimi.css",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run build-clean && npm run build-sass && npm run build-autoprefix && npm run build-cleancss",
+    "build-autoprefix": "postcss --use autoprefixer --map false --output dist/kimi.css dist/kimi.css",
+    "build-clean": "rimraf dist",
+    "build-cleancss":"cleancss -o dist/kimi.min.css dist/kimi.css",
+    "build-sass": "node-sass --output-style expaned --source-map true src/kimi.scss dist/kimi.css"
+  },
+  "author": "liuyi",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.7.6",
+    "clean-css-cli": "^4.3.0",
+    "node-sass": "^4.13.1",
+    "postcss-cli": "^7.1.0",
+    "rimraf": "^3.0.2"
+  }
+}
